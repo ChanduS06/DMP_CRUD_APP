@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 20%;
+  border: 2px solid #73AD11;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a:hover, a:active {
+  background-color: green;
+}
+.container {
+    padding-top: 200px;
+    background-color: white;
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h2>List of all Faculty Information in the Database:</h2>
+<p> </p>
+{% for facultie in faculty %}
+<h3>{{facultie}}</h3><hr>
+{% endfor %}
+
+<a href="/facultydata/facultycreate">Create another entry for Faculty</a>
+<p> </p>
+
+
+</div>
+
+</body>
+</html>
